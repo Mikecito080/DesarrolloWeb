@@ -1,0 +1,241 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #222;
+    color: #ddd;
+}
+
+nav {
+    position: relative; /* Asegura que el z-index funcione */
+    z-index: 1000;
+    background-color: #333;
+    padding: 15px;
+    text-align: center;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+}
+nav a:hover {
+    color: #222;
+    background-color: #ddd;
+}
+main {
+    padding: 20px;
+    background-color: #444;
+    min-height: 100vh;
+}
+.container {
+    display: flex;
+}
+.main-content {
+    flex: 3;
+    padding-right: 200px;
+    padding-left: 80px;
+}
+.sidebar {
+    flex: 1;
+    background-color: #555;
+    padding: 15px;
+    border-radius: 5px;
+}
+.sidebar h2 {
+    margin-top: 0;
+}
+.content {
+    display: none;
+    padding-right: 200px;
+    padding-left: 200px;
+}
+.active {
+    display: block;
+}
+.gif1{
+padding-left: 200px;
+    
+}
+.gif2{
+    align-items: center;
+}
+h1{
+    text-align: center;
+}
+--foro 
+#comments-container {
+    background-color: #555;
+    padding: 10px;
+    padding-top: 10px   ;
+    margin: 20px 0;
+    border-radius: 5px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+#comments-container p {
+    background-color: #666;
+    padding: 8px;
+    
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+textarea {
+
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #333;
+    color: white;
+}
+
+button {
+    background-color: #008CBA;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #005f73;
+}
+#menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 12px 15px; /* Ajusta el espacio interno */
+    position: absolute;
+    top: -1px;
+    left: 15px;
+    z-index: 1100; /* Asegura que esté por encima del menú */
+    height: 40px; /* Ajusta la altura para mayor precisión */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .content.active {
+        position: relative;
+        z-index: 1;
+        margin-top: 20px; /* Ajuste para evitar que se superponga */
+    }
+    
+    .content {
+        max-width: 100%;
+        padding: 15px;
+        margin-top: px; /* Ajusta este valor según sea necesario */
+    }
+    #menu-toggle {
+        display: flex; /* Se muestra en pantallas pequeñas */
+    }
+    
+
+    .nav-links {
+        display: none; /* Ocultar enlaces inicialmente */
+        flex-direction: column;
+        position: absolute;
+        top: 10px;
+        left: 0;
+        width: 100%;
+        background: #333;
+        text-align: center;
+        padding: 10px 0;
+    }
+    .nav-links a {
+        display: block;
+        padding: 10px;
+        color: white;
+        text-decoration: none;
+    }
+    .nav-links.active {
+        display: flex; /* Mostrar menú cuando se active */
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 35px;
+        background-color: #333;
+        z-index: 1000;
+        padding: 10px 0;
+    }
+
+    .contenedor {
+        padding: 10px;
+    }
+   
+   
+    
+    .introduccion-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-content {
+        padding: 10px;
+        width: 100%;
+    }
+    aside{
+        width: 100%;
+        min-width: auto;
+        text-align: center;
+    }
+
+    .sidebar {
+        width: 100%;
+        min-width: auto;
+        text-align: center;
+        padding: 5px;
+    }
+    .sidebar p{
+        padding: 3px;
+    }
+    .content.active {
+        animation: none !important;
+    }   
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+        padding-left: 0%;
+    }
+    .gif1{
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+        padding-left: 0%;
+    }
+    .gif2{
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+        padding-left: 0%;
+    }
+    
+}

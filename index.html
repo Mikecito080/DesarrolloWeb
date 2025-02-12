@@ -1,0 +1,120 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desarrollo Web</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <button id="menu-toggle">☰</button>
+        <div class="nav-links">
+            <a href="#" onclick="showContent('intro')">Introducción</a>
+            <a href="#" onclick="showContent('frontend')">Frontend</a>
+            <a href="#" onclick="showContent('backend')">Backend</a>
+            <a href="#" onclick="showContent('foro')">Foro de Discusión</a>
+        </div>
+    </nav>
+    
+    <main>
+        <section id="intro" class="content active">
+            <div class="container">
+                <div class="main-content">
+                    <h1>¿Qué es el desarrollo web?</h1>
+                    <p>El desarrollo web engloba todas las actividades relacionadas con la creación y mantenimiento de páginas y aplicaciones web. 
+                    Abarca desde la estructuración del contenido y el diseño visual hasta la implementación de funcionalidades interactivas y la gestión del servidor.<br>
+                    <br>Segun el blog "The Bridge" no da la siguiente definicion  Podemos definir el Desarrollo Web como el proceso de creación de un sitio web, una aplicación o un software. <br>
+                    Se debe hacer un estudio para determinar las necesidades del cliente y a partir de ahí poner en marcha una interfaz atractiva e incorporar funcionalidades para el usuario final. 
+                </p><br>
+                <img class="gif1" src="img/dw.gif" width="400px" height="300px">
+            <br><br><br>
+
+                <aside class="sidebar">
+                    <h2>Inicios</h2>
+                    <p>El desarrollo web comenzó en la década de 1990 con la llegada de HTML y los primeros navegadores. 
+                    Con el tiempo, las tecnologías evolucionaron con la introducción de CSS y JavaScript, permitiendo sitios web más dinámicos y atractivos.</p>
+                    <p>En sus inicios, las páginas web eran estáticas y simples, pero con el avance de la tecnología, 
+                        se han convertido en experiencias interactivas y altamente funcionales.<br><br>
+
+                    <img class="gif1" src="img/dw2.gif" width="300px" height="200px"></p>
+                </aside>
+            </div>
+            
+        </section>
+        <section id="frontend" class="content">
+            <div class="main-content">
+            <h1>Desarrollo Frontend</h1>
+            <p>El desarrollo frontend se centra en la creación de la interfaz de usuario de un sitio web o aplicación. <br>
+                Es la parte visible con la que los usuarios interactúan directamente. Se basa en tres tecnologías fundamentales: <br><br>
+                <img class="gif1" src="img/fe.gif" height="300px" width="300px"></p>
+
+                <h2>HTML (HyperText Markup Language)</h2>
+                <p>Es el lenguaje estándar para estructurar el contenido de una página web. 
+                    Define elementos como títulos, párrafos, imágenes, formularios y enlaces. <br><br>
+                <img class="gif1" src="img/html.gif" height="300px" width="300px"></p>
+
+                    <h2>CSS (Cascading Style Sheets)</h2>
+                    <p>Se encarga del diseño y la presentación de la web. Permite definir colores, 
+                    fuentes, tamaños, posicionamiento de elementos y efectos visuales como animaciones y transiciones. <br><br>
+                    <img class="gif1" src="img/css.gif" height="300px" width="300px"></p></p>
+
+                    <h2>JavaScript (JS)</h2>
+                    <p>Lenguaje de programación que añade interactividad a las páginas web. Se usa para eventos dinámicos como validaciones de formularios, 
+                    menús desplegables, animaciones y carga de contenido sin recargar la página (AJAX).<br><br>
+                <div class="gif1"><img src="img/web.gif"  height="300px" width="300px"></p></div>
+                
+                <h2>Tendencias del Front end</h2>
+                <p>
+                    Single Page Applications (SPA): Aplicaciones que cargan una única página y actualizan su contenido dinámicamente sin recargar. <br><br>
+                    Progressive Web Apps (PWA): Aplicaciones web que ofrecen experiencia similar a las apps nativas con acceso offline y notificaciones push. <br>  <br>
+                    Componentización: Uso de elementos reutilizables para mantener un código limpio y escalable.</p>
+                </div>
+        </section>
+        <section id="backend" class="content">
+            <div class="main-content">
+            <h1>Desarrollo Backend</h1>
+            <p>El desarrollo backend se enfoca en la lógica y el funcionamiento interno de una aplicación o sitio web. <br>
+                Es la parte que los usuarios no ven, pero que permite que las funcionalidades del frontend operen correctamente. <br> 
+                El backend gestiona la comunicación con bases de datos, la autenticación de usuarios, la lógica de negocio y la seguridad.</p>
+                <h2>Tecnologias y lenguajes usados</h2>
+                <h3>Lenguajes Backend</h3>
+                <p>Son fundamentales para el desarrollo del backend, ya que permiten crear la lógica y gestionar los datos. Algunos de los más utilizados incluyen:
+                    <ul>
+                    <li>JavaScript (Node.js): Permite ejecutar código en el servidor con gran eficiencia y escalabilidad.</li>
+                    <li>Python (Django, Flask): Lenguaje versátil con frameworks que facilitan el desarrollo web.</li>
+                    <li>PHP (Laravel): Popular en el desarrollo de aplicaciones web dinámicas.</li>
+                    <li>Java (Spring Boot): Usado en aplicaciones empresariales por su robustez y seguridad.</li>
+                    <li>Ruby (Ruby on Rails): Enfocado en la simplicidad y rapidez de desarrollo.</li>
+                    </ul>
+                <div class="img"><img class="gif1" src="img/be.gif" height="300px" width="200px"></p></div>
+                <h3>Base de datos</h3>
+                <p>Almacenan la información de la aplicación, desde usuarios hasta contenido dinámico.
+                <ul>
+                    <li>Relacionales (SQL): Estructuran los datos en tablas (MySQL, PostgreSQL, SQL Server).</li>
+                    <li>NoSQL: Almacenan datos de forma flexible (MongoDB, Firebase, Redis).</li>
+                </ul> <img class="gif1" src="img/base2.jpg" width="400px" height="200px">
+            </p>
+            <h3>Servidores y Hosting</h3>
+            <p>Permiten alojar y ejecutar la aplicación web en internet.
+            <ul>
+                <li>Servidores Web: Apache, Nginx.</li>
+                <li>Cloud Computing: AWS, Google Cloud, Microsoft Azure.</li>
+                <li>Plataformas de Hosting: Heroku, Vercel, DigitalOcean.</li>
+            </ul> <img class="gif1" src="img/base.jpg" width="400px" height="300px">
+        </p>
+    </div>
+        </section>
+        <section id="foro" class="content">
+            <h1>Foro de Discusión</h1>
+            <div id="comments-container">
+                <!-- Aquí aparecerán los comentarios -->
+            </div>
+            <textarea id="commentInput" placeholder="Escribe tu comentario aquí..."></textarea>
+            <button onclick="addComment()">Enviar</button>
+        </section>
+    </div>  
+    </main>
+    <script src="script.js"></script>
+
+</body>
+</html>

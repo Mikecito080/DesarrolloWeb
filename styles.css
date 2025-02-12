@@ -126,7 +126,11 @@ button:hover {
     justify-content: center;
 }
 
-
+@media (min-width: 769px) {  /* Ocultar en pantallas grandes */
+    #menu-toggle {
+        display: none;
+    }
+}
 .nav-links {
     display: flex;
     justify-content: center;

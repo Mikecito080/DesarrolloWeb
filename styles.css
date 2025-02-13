@@ -5,7 +5,9 @@ body {
     background-color: #222;
     color: #ddd;
 }
-
+p{
+    text-align: justify;
+}
 nav {
     position: relative; /* Asegura que el z-index funcione */
     z-index: 1000;

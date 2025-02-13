@@ -10,6 +10,7 @@ p{
 }
 h4{
     align-items: center;
+    text-align: center;
 }
 nav {
     position: relative; /* Asegura que el z-index funcione */
